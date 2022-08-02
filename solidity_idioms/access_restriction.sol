@@ -23,5 +23,4 @@ contract Ownable {
         owner = address(0);
     }
 
-
 }
