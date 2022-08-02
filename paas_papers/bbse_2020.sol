@@ -35,7 +35,6 @@ contract Auction {
         address previous_bidder = auctioned_item.highest_bidder;
         accountBalance[previous_bidder] = auctioned_item.price;
         auctioned_item.price = bid_amount;
-        auctioned_item.price = bid_amount;
         auctioned_item.highest_bidder = payable(msg.sender);
     }
 
@@ -43,7 +42,6 @@ contract Auction {
         uint balance = accountBalance[msg.sender];
         require(balance > 0);
         require(msg.sender != auctioned_item.highest_bidder);
-
         accountBalance[msg.sender] = 0;
         payable(msg.sender).transfer(balance);
     }
