@@ -1,4 +1,4 @@
-# solidity_practice_code
+# Solidity Smart Contracts
 
 ## Basic solidity idioms:
 1. access restriction
